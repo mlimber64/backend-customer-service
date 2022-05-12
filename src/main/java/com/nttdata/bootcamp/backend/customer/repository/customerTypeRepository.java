@@ -3,9 +3,9 @@ package com.nttdata.bootcamp.backend.customer.repository;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.nttdata.bootcamp.backend.customer.model.customer;
+import com.nttdata.bootcamp.backend.customer.model.customerType;
 
 @Repository
-public interface customerRepository extends ReactiveMongoRepository<customer, String>{
+public interface customerTypeRepository extends ReactiveMongoRepository<customerType, String>{
 
 }
