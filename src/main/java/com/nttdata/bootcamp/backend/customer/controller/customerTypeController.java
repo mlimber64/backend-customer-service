@@ -11,6 +11,8 @@ import com.nttdata.bootcamp.backend.customer.service.customerTypeService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@RestController
+@RequestMapping("/api/v1/customerType")
 public class customerTypeController {
 	
 	@Autowired

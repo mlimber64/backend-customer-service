@@ -37,7 +37,7 @@ public class customerController {
 	@PutMapping("/customer/{id}")
 	private Mono<ResponseEntity<customer>> update(@PathVariable("id")String id,@RequestBody customer ca){
 		return serviceCustomer.update(id, ca)
-				.flatMap(cu -> Mono.just(ResponseEntity.ok(cu)))
+				.flatMap(customers -> Mono.just(ResponseEntity.ok(customers)))
 				.switchIfEmpty(Mono.just(ResponseEntity.notFound().build()));
 	}
 	
