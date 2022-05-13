@@ -49,6 +49,7 @@ public class customerTypeServiceImpl implements customerTypeService{
 				.findById(id)
 				.flatMap(c -> repositoryType.deleteById(c.getId()).thenReturn(c));
 	}
-
+	
+	
 	
 }

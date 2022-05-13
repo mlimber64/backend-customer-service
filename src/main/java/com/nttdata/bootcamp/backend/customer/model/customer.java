@@ -30,8 +30,6 @@ public class customer {
 	private String email;
 	@Field
 	private Boolean active;
-	
-	
 	public String getId() {
 		return id;
 	}
@@ -81,7 +79,4 @@ public class customer {
 		this.active = active;
 	}
 	
-	
-
-
 }

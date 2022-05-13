@@ -37,6 +37,4 @@ public class customerType {
 		this.description = description;
 	}
 	
-	
-
 }
